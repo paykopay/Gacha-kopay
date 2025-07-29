@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gacha One Piece</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <!-- Login/Register -->
+  <div id="login-container" class="auth-box">
+    <h1>☠️ Gacha One Piece ☠️</h1>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="loginBtn">Login</button>
+    <button id="registerBtn">Register</button>
+  </div>
+
+  <!-- Game Area -->
+  <div id="game-container" style="display:none">
+    <h2>Selamat datang, <span id="usernameDisplay"></span>!</h2>
+    
+    <!-- Koin -->
+    <div class="coin-box">💰 Koin: <span id="coins">10</span></div>
+
+    <!-- Gacha Tombol -->
+    <div class="gacha-actions">
+      <button id="gachaBtn">🎯 Gacha 1x</button>
+      <button id="gacha10Btn">💥 Gacha 10x</button>
+    </div>
+
+    <!-- Hasil Gacha -->
+    <div id="result"></div>
+
+    <!-- Koleksi -->
+    <h3>Koleksi Kamu</h3>
+    <div id="collection" class="collection-grid"></div>
+
+    <!-- Leaderboard -->
+    <h3>🏆 Leaderboard</h3>
+    <ol id="leaderboard"></ol>
+
+    <!-- Logout -->
+    <button id="logoutBtn">Logout</button>
+  </div>
+</body>
+</html>

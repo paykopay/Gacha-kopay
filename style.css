@@ -1,0 +1,77 @@
+/* Background tema anime One Piece */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://wallpaperaccess.com/full/502306.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Kotak login dan kontainer utama */
+.auth-box, .coin-box, .gacha-actions, #result, #collection, #leaderboard {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px auto;
+  max-width: 400px;
+}
+
+/* Input dan tombol */
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+}
+
+button:hover {
+  background-color: #ffaa00;
+}
+
+/* Grid koleksi karakter */
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.collection-grid img {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid gold;
+  box-shadow: 0 0 10px gold;
+  transition: transform 0.2s;
+}
+
+.collection-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Leaderboard */
+#leaderboard {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#leaderboard li {
+  background: rgba(255,255,255,0.1);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
